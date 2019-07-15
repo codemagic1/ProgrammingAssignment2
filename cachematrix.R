@@ -29,7 +29,7 @@ cacheInverse <- function(x, ...) {
     return(m)
   }
   data <- x$get()
-  m <- Inverse(data, ...)
+  m <- solve(data, ...)
   x$setInverse(m)
   m
 }
